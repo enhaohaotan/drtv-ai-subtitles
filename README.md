@@ -36,60 +36,60 @@ Danish is the original language. Choose one of these 54 translation targets:
 
 | Code | Language | Native name |
 | --- | --- | --- |
-| zh | Simplified Chinese | 中文 |
 | en | English | English |
-| ja | Japanese | 日本語 |
-| ko | Korean | 한국어 |
+| zh | Simplified Chinese | 中文 |
 | ar | Arabic | العربية |
-| de | German | Deutsch |
-| fr | French | Français |
-| es | Spanish | Español |
-| it | Italian | Italiano |
-| pt | Portuguese | Português |
-| nl | Dutch | Nederlands |
-| sv | Swedish | Svenska |
-| nb | Norwegian Bokmål | Norsk bokmål |
-| fi | Finnish | Suomi |
-| pl | Polish | Polski |
-| uk | Ukrainian | Українська |
-| ru | Russian | Русский |
-| sq | Albanian | Shqip |
-| hy | Armenian | Հայերեն |
 | az | Azerbaijani | Azərbaycanca |
-| eu | Basque | Euskara |
 | be | Belarusian | Беларуская |
-| bs | Bosnian | Bosanski |
-| br | Breton | Brezhoneg |
 | bg | Bulgarian | Български |
+| br | Breton | Brezhoneg |
+| bs | Bosnian | Bosanski |
 | ca | Catalan | Català |
-| hr | Croatian | Hrvatski |
+| cnr | Montenegrin in Latin script | Crnogorski |
 | cs | Czech | Čeština |
-| et | Estonian | Eesti |
-| fo | Faroese | Føroyskt |
-| gl | Galician | Galego |
-| ka | Georgian | ქართული |
+| cy | Welsh | Cymraeg |
+| de | German | Deutsch |
 | el | Greek | Ελληνικά |
-| hu | Hungarian | Magyar |
-| is | Icelandic | Íslenska |
+| es | Spanish | Español |
+| et | Estonian | Eesti |
+| eu | Basque | Euskara |
+| fi | Finnish | Suomi |
+| fo | Faroese | Føroyskt |
+| fr | French | Français |
 | ga | Irish | Gaeilge |
-| lv | Latvian | Latviešu |
-| lt | Lithuanian | Lietuvių |
+| gd | Scottish Gaelic | Gàidhlig |
+| gl | Galician | Galego |
+| hr | Croatian | Hrvatski |
+| hu | Hungarian | Magyar |
+| hy | Armenian | Հայերեն |
+| is | Icelandic | Íslenska |
+| it | Italian | Italiano |
+| ja | Japanese | 日本語 |
+| ka | Georgian | ქართული |
+| ko | Korean | 한국어 |
 | lb | Luxembourgish | Lëtzebuergesch |
+| lt | Lithuanian | Lietuvių |
+| lv | Latvian | Latviešu |
 | mk | Macedonian | Македонски |
 | mt | Maltese | Malti |
-| cnr | Montenegrin in Latin script | Crnogorski |
-| se | Northern Sami | Davvisámegiella |
+| nb | Norwegian Bokmål | Norsk bokmål |
+| nl | Dutch | Nederlands |
 | nn | Norwegian Nynorsk | Norsk nynorsk |
 | oc | Occitan | Occitan |
-| ro | Romanian | Română |
+| pl | Polish | Polski |
+| pt | Portuguese | Português |
 | rm | Romansh | Rumantsch |
+| ro | Romanian | Română |
+| ru | Russian | Русский |
 | sco | Scots | Scots |
-| gd | Scottish Gaelic | Gàidhlig |
-| sr | Serbian in Cyrillic script | Српски |
+| se | Northern Sami | Davvisámegiella |
 | sk | Slovak | Slovenčina |
 | sl | Slovenian | Slovenščina |
+| sq | Albanian | Shqip |
+| sr | Serbian in Cyrillic script | Српски |
+| sv | Swedish | Svenska |
 | tr | Turkish | Türkçe |
-| cy | Welsh | Cymraeg |
+| uk | Ukrainian | Українська |
 
 ## Development
 
