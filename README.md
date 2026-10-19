@@ -25,6 +25,8 @@ Cached translations can appear as soon as DRTV loads the original cue. New trans
 
 ## Data and storage
 
+See the [privacy policy](PRIVACY.md) for details.
+
 - Subtitle text, nearby dialogue, programme titles, and continuity notes are sent directly to OpenAI. There is no developer-operated backend.
 - The API key is saved locally by default. Uncheck **Remember the key on this device** for session-only storage, or use **Delete API key** to remove it. Local storage is not an encrypted vault.
 - Translations are cached on this device for up to 30 days, within size limits. **Clear translation cache** removes saved translations; refresh DRTV to clear the current page's copy.
