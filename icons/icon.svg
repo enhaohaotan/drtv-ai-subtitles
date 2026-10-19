@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <title>Bilingual subtitles</title>
+  <path fill="#181818" d="M0 0h128v128H0z"/>
+  <path d="M38 28H26v72h12M90 28h12v72H90" stroke="#fff" stroke-width="8" stroke-linecap="butt" stroke-linejoin="miter"/>
+  <path d="M45 51h38" stroke="#ff001e" stroke-width="8" stroke-linecap="butt"/>
+  <path d="M42 77h44" stroke="#fff" stroke-width="8" stroke-linecap="butt"/>
+</svg>

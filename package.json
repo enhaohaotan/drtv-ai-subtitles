@@ -1,0 +1,10 @@
+{
+  "name": "drtv-ai-subtitles",
+  "version": "0.6.4",
+  "private": true,
+  "type": "module",
+  "description": "Context-aware subtitle translation for DRTV.",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  }
+}

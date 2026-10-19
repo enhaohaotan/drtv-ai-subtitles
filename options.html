@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Translation settings</title><link rel="icon" type="image/png" href="icons/icon-32.png"><link rel="stylesheet" href="options.css"></head>
+<body>
+<header><h1>Translation settings</h1><button id="close-window" aria-label="Close settings">×</button></header>
+<main><form id="form" inert aria-busy="true">
+<section><h2>Subtitles</h2><div class="sizes"><label>Translation size <input id="fontSize" type="number" min="16" max="40" required></label><label>Original size <input id="originalSize" type="number" min="14" max="36" required></label></div>
+<label class="check"><input id="showOriginal" type="checkbox">Show the Danish original below the translation</label>
+<div class="preview"><div id="preview-translation">Some encounters are worth the wait.</div><div id="preview-original" lang="da">Nogle møder er værd at vente på.</div></div>
+</section>
+<details id="connection"><summary>OpenAI connection <span id="connection-state"></span></summary><div class="details-body">
+<label for="key">API key</label><input id="key" type="password" autocomplete="off" placeholder="Enter your OpenAI API key"><p id="key-state" class="hint"></p>
+<label class="check"><input id="remember" type="checkbox">Remember the key on this device</label>
+<p class="hint">Set this up once. Uncheck to keep the key for this browser session only. Your key is never sent to DRTV. Local extension storage is not an encrypted vault.</p>
+<label id="model-label" for="model-trigger">Model</label>
+<div class="model-picker" id="model-picker">
+<input id="model" type="hidden">
+<button id="model-trigger" class="model-trigger" type="button" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="model-list" aria-labelledby="model-label model-name" aria-describedby="model-cost">
+<span class="model-copy"><span id="model-name" class="model-name"></span><span id="model-cost" class="model-cost"></span></span><span class="model-chevron" aria-hidden="true"></span>
+</button>
+<div id="model-list" class="model-list" role="listbox" aria-labelledby="model-label" hidden></div>
+</div>
+<p id="model-pricing" class="hint">Prices are USD per 1M tokens: input / output, Standard processing, uncached input up to 272K tokens. Reasoning tokens are billed as output. Cache charges and other processing tiers may differ. Checked 19 Oct 2026. <a href="https://developers.openai.com/api/docs/pricing" target="_blank" rel="noopener noreferrer">Current OpenAI pricing</a>. Model access depends on your OpenAI account.</p>
+<button type="button" class="text-button" id="clear">Delete API key</button></div></details>
+<details><summary>Data and cache</summary><div class="details-body">
+<p class="hint">When translation is enabled, the current batch, loaded dialogue before and after it, the programme title and nearby continuity notes are sent to OpenAI. Only subtitles near the current playback position are translated ahead. Your language choice is remembered. Translations are cached on this device for up to 30 days, within a size limit, so you can return without retranslating cached subtitles.</p>
+<p class="hint">Nearby subtitles may be translated while playback is paused. Disabling translation stops new requests and restores DRTV subtitles. Requests already sent may incur charges.</p>
+<button type="button" class="text-button" id="clear-cache">Clear translation cache</button></div></details>
+<div class="actions"><button type="submit">Save settings</button><p id="message" role="status"></p></div>
+</form></main><script type="module" src="options.js"></script>
+</body></html>

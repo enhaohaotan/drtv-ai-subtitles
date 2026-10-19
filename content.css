@@ -1,0 +1,32 @@
+.drtv-ai-replaced .vjs-text-track-display { visibility:hidden !important; }
+/* Button classes, SVG dimensions, selected red and hover colors are owned by DRTV. */
+#drtv-ai-overlay { position:absolute; bottom:6%; left:5%; right:5%; z-index:30; pointer-events:none; text-align:center; display:flex; flex-direction:column; align-items:center; gap:4px; font-family:DRPublik-Regular,Arial,'PingFang SC','Microsoft YaHei',sans-serif; }
+#drtv-ai-overlay[hidden] { display:none; }
+#drtv-ai-overlay > div { color:#fff; background:rgba(0,0,0,.75); border-radius:0; padding:3px 10px; line-height:1.35; max-inline-size:min(100%,76ch); white-space:normal; text-wrap:balance; overflow-wrap:anywhere; text-shadow:0 1px 2px #000; box-sizing:border-box; }
+#drtv-ai-overlay > div:empty { display:none; }
+#drtv-ai-translation { font-size:var(--drtv-ai-size,24px); font-weight:400; }
+#drtv-ai-overlay > #drtv-ai-translation:lang(zh) { max-inline-size:min(100%,34em); }
+#drtv-ai-original { font-size:var(--drtv-ai-original-size,22px); font-weight:400; }
+/* The native menu class supplies its fixed positioning, fonts, row colors and close icon. */
+#drtv-ai-menu { z-index:1000; }
+#drtv-ai-menu[hidden], #drtv-ai-menu [hidden] { display:none !important; }
+#drtv-ai-menu .accessibility-menu__menu-header { display:flex; align-items:center; gap:20px; padding-right:18px; }
+#drtv-ai-menu .accessibility-menu__menu-header > span { flex:1; min-width:0; }
+#drtv-ai-menu .drtv-ai-settings, #drtv-ai-menu .accessibility-menu__close-btn { position:relative; inset:auto; flex:0 0 24px; width:24px; height:24px; display:grid; place-items:center; padding:0; margin:0; line-height:0; background:none; cursor:pointer; }
+#drtv-ai-menu .accessibility-menu__close-btn::before, #drtv-ai-menu .accessibility-menu__close-btn::after { top:50%; left:50%; right:auto; }
+#drtv-ai-menu .accessibility-menu__close-btn::before { transform:translate(-50%,-50%) rotate(45deg); }
+#drtv-ai-menu .accessibility-menu__close-btn::after { transform:translate(-50%,-50%) rotate(-45deg); }
+#drtv-ai-menu .drtv-ai-settings .svg-icon { width:20px; height:20px; fill:#000; }
+#drtv-ai-menu .drtv-ai-settings:hover .svg-icon { fill:#ff001e; }
+#drtv-ai-status { margin:0; border-top:1px solid #c9c9c9; padding:12px 25px; color:#555; font-size:14px; line-height:1.4; }
+#drtv-ai-retry { padding:0 25px 16px; background:none; color:#000; font:inherit; font-size:14px; text-decoration:underline; cursor:pointer; }
+@media(max-width:600px) { #drtv-ai-overlay {left:3%;right:3%;} #drtv-ai-translation {font-size:min(var(--drtv-ai-size,24px),4.5vw);} #drtv-ai-original {font-size:min(var(--drtv-ai-original-size,22px),4vw);} }
+
+#drtv-ai-settings-dialog { position:fixed; inset:0; width:min(520px,calc(100vw - 32px)); height:min(620px,calc(100dvh - 48px)); max-width:calc(100vw - 32px); max-height:calc(100dvh - 48px); margin:auto; padding:0; border:0; border-radius:0; background:#fff; color:#000; overflow:hidden; box-shadow:0 12px 48px #0005; }
+#drtv-ai-settings-dialog::backdrop { background:rgba(0,0,0,.65); }
+#drtv-ai-settings-dialog iframe { display:block; width:100%; height:100%; border:0; background:#fff; }
+
+#drtv-ai-menu { display:flex; flex-direction:column; max-height:min(70dvh,560px); }
+#drtv-ai-menu .accessibility-menu__menu-header { flex-shrink:0; }
+#drtv-ai-menu .accessibility-menu__content { overflow-y:auto; overscroll-behavior:contain; min-height:0; }
+#drtv-ai-menu .drtv-ai-language-name { text-transform:none; }
