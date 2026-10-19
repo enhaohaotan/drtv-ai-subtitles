@@ -30,11 +30,66 @@ Cached translations can appear as soon as DRTV loads the original cue. New trans
 - Translations are cached on this device for up to 30 days, within size limits. **Clear translation cache** removes saved translations; refresh DRTV to clear the current page's copy.
 - The extension uses storage, scripts limited to DRTV pages, and access to `api.openai.com`. It does not request cookie or debugger access.
 
-## Limitations
+## Languages
 
-Requires existing text subtitles and lawful access to the programme. DRTV website changes may require updates. Live streams, casting, picture-in-picture, and all programmes have not been comprehensively tested.
+Danish is the original language. Choose one of these 54 translation targets:
 
-Automated checks use mock API responses; real translation quality, latency, and episode costs have not been benchmarked. This project is not affiliated with or endorsed by DR and does not grant rights to programme content or subtitles.
+| Code | Language | Native name |
+| --- | --- | --- |
+| zh | Simplified Chinese | 中文 |
+| en | English | English |
+| ja | Japanese | 日本語 |
+| ko | Korean | 한국어 |
+| ar | Arabic | العربية |
+| de | German | Deutsch |
+| fr | French | Français |
+| es | Spanish | Español |
+| it | Italian | Italiano |
+| pt | Portuguese | Português |
+| nl | Dutch | Nederlands |
+| sv | Swedish | Svenska |
+| nb | Norwegian Bokmål | Norsk bokmål |
+| fi | Finnish | Suomi |
+| pl | Polish | Polski |
+| uk | Ukrainian | Українська |
+| ru | Russian | Русский |
+| sq | Albanian | Shqip |
+| hy | Armenian | Հայերեն |
+| az | Azerbaijani | Azərbaycanca |
+| eu | Basque | Euskara |
+| be | Belarusian | Беларуская |
+| bs | Bosnian | Bosanski |
+| br | Breton | Brezhoneg |
+| bg | Bulgarian | Български |
+| ca | Catalan | Català |
+| hr | Croatian | Hrvatski |
+| cs | Czech | Čeština |
+| et | Estonian | Eesti |
+| fo | Faroese | Føroyskt |
+| gl | Galician | Galego |
+| ka | Georgian | ქართული |
+| el | Greek | Ελληνικά |
+| hu | Hungarian | Magyar |
+| is | Icelandic | Íslenska |
+| ga | Irish | Gaeilge |
+| lv | Latvian | Latviešu |
+| lt | Lithuanian | Lietuvių |
+| lb | Luxembourgish | Lëtzebuergesch |
+| mk | Macedonian | Македонски |
+| mt | Maltese | Malti |
+| cnr | Montenegrin in Latin script | Crnogorski |
+| se | Northern Sami | Davvisámegiella |
+| nn | Norwegian Nynorsk | Norsk nynorsk |
+| oc | Occitan | Occitan |
+| ro | Romanian | Română |
+| rm | Romansh | Rumantsch |
+| sco | Scots | Scots |
+| gd | Scottish Gaelic | Gàidhlig |
+| sr | Serbian in Cyrillic script | Српски |
+| sk | Slovak | Slovenčina |
+| sl | Slovenian | Slovenščina |
+| tr | Turkish | Türkçe |
+| cy | Welsh | Cymraeg |
 
 ## Development
 
