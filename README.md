@@ -44,4 +44,4 @@ No build step or runtime dependencies. Run the tests with a current Node.js vers
 node --test tests/*.test.mjs
 ```
 
-Language metadata is in [`languages.mjs`](languages.mjs). Historical technical findings are in [`docs/feasibility.md`](docs/feasibility.md).
+Language metadata is in [`languages.mjs`](languages.mjs).
