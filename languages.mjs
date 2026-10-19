@@ -3,6 +3,9 @@ export const SOURCE_LANGUAGE = Object.freeze({code:'da', tag:'da', nativeName:'D
 const rows = [
   ['zh','zh-Hans','中文','Simplified Chinese'],
   ['en','en','English','English'],
+  ['ja','ja','日本語','Japanese'],
+  ['ko','ko','한국어','Korean'],
+  ['ar','ar','العربية','Arabic','rtl'],
   ['sq','sq','Shqip','Albanian'],
   ['hy','hy','Հայերեն','Armenian'],
   ['az','az','Azərbaycanca','Azerbaijani'],
@@ -53,9 +56,9 @@ const rows = [
   ['uk','uk','Українська','Ukrainian'],
   ['cy','cy','Cymraeg','Welsh']
 ];
-const frequent=['zh','en','de','fr','es','it','pt','nl','sv','nb','fi','pl','uk','ru'];
+const frequent=['zh','en','ja','ko','ar','de','fr','es','it','pt','nl','sv','nb','fi','pl','uk','ru'];
 const rank=code=>{const i=frequent.indexOf(code);return i<0?frequent.length:i;};
-export const TARGET_LANGUAGES=Object.freeze(rows.map(([code,tag,nativeName,englishName])=>Object.freeze({code,tag,nativeName,englishName,direction:'ltr'})).sort((a,b)=>rank(a.code)-rank(b.code)||a.englishName.localeCompare(b.englishName,'en')));
+export const TARGET_LANGUAGES=Object.freeze(rows.map(([code,tag,nativeName,englishName,direction='ltr'])=>Object.freeze({code,tag,nativeName,englishName,direction})).sort((a,b)=>rank(a.code)-rank(b.code)||a.englishName.localeCompare(b.englishName,'en')));
 const targets=new Map(TARGET_LANGUAGES.map(l=>[l.code,l]));
 export function getTargetLanguage(code) { return targets.get(code) || null; }
 export function getLanguage(code) { return code===SOURCE_LANGUAGE.code?SOURCE_LANGUAGE:getTargetLanguage(code); }

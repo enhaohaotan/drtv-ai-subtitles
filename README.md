@@ -1,6 +1,6 @@
 # DRTV AI Subtitles
 
-A Chrome Manifest V3 extension that displays one AI-translated subtitle language above the Danish original on DRTV. Version **0.6.4**.
+A Chrome Manifest V3 extension that displays one AI-translated subtitle language above the Danish original on DRTV. Version **0.6.5**.
 
 This is an independent, unofficial prototype. It is not affiliated with or endorsed by DR. You need lawful access to the programme and your own OpenAI API key. API usage is billed to your OpenAI account.
 
@@ -18,7 +18,7 @@ Keep the extension folder in place after installation. To update an unpacked ins
 
 ## Features
 
-- A scrollable menu with 51 target languages. Language names use their native spelling; the rest of the interface is English.
+- A scrollable menu with 54 target languages. Language names use their native spelling; the rest of the interface is English.
 - One translated language at a time, with the Danish original optionally shown below it.
 - A language-code button: **DA** when translation is off, or the selected target code when enabled.
 - Player controls and menus that follow the existing DRTV styling, including hover states and the red selected state.
@@ -114,6 +114,9 @@ Danish is the source language and the translation-off state, rather than a dupli
 |---|---|---|
 | zh | 中文 | Simplified Chinese |
 | en | English | English |
+| ja | 日本語 | Japanese |
+| ko | 한국어 | Korean |
+| ar | العربية | Arabic |
 | de | Deutsch | German |
 | fr | Français | French |
 | es | Español | Spanish |
@@ -165,6 +168,8 @@ Danish is the source language and the translation-off state, rather than a dupli
 | cy | Cymraeg | Welsh |
 
 ## Changelog
+
+- **0.6.5:** Added Japanese, Korean, and Arabic; Arabic names and translated subtitles use right-to-left direction.
 
 - **0.6.4:** Added the independently drawn extension icon, PNG sizes, SVG source, and favicon.
 - **0.6.3:** Persisted language selection and individual translations across reloads and return visits.

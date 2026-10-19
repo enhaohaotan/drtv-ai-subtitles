@@ -32,6 +32,10 @@ test('every offered language reaches the prompt without an English fallback',asy
   const {languageIcon}=await import('../icons.mjs');
   assert.equal(new Set(TARGET_LANGUAGES.map(l=>l.code)).size,TARGET_LANGUAGES.length);
   assert.equal(getTargetLanguage(SOURCE_LANGUAGE.code),null);
+  for(const code of ['ja','ko','ar'])assert.ok(getTargetLanguage(code));
+  assert.equal(getTargetLanguage('ar').direction,'rtl');
+  assert.equal(getTargetLanguage('ja').direction,'ltr');
+  assert.equal(getTargetLanguage('ko').direction,'ltr');
   for(const l of TARGET_LANGUAGES){
     const body=requestBody(validateBatch({...batch,language:l.code}),'gpt-6.1-sol');
     assert.ok(body.instructions.includes(`into natural ${l.englishName} (${l.tag})`));

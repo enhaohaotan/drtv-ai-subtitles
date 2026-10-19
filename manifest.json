@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "DRTV AI Subtitles",
-  "version": "0.6.4",
-  "description": "Context-aware OpenAI subtitle translation for DRTV, in European languages and Chinese alongside the Danish original.",
+  "version": "0.6.5",
+  "description": "Context-aware OpenAI subtitle translation for DRTV in multiple languages, alongside the Danish original.",
   "minimum_chrome_version": "111",
   "permissions": [
     "storage"
